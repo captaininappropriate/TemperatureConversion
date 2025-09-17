@@ -1,4 +1,4 @@
-# temperature
+# Temperature
 A GUI temperature conversion application written in Python3
 
 ## TODO
