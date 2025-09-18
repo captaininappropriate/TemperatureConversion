@@ -102,22 +102,27 @@ class MainWindow(QMainWindow):
 
     def celsius_to_fahrenheit(self, temperature):
         value = (float(temperature) * 9/5) + 32
-        self.conversion.setText(str(value))
+        self.conversion.setText(str(round(value, 4)))
 
     def fahrenheit_to_celsius(self, temperature):
-        pass
+        value = 5/9 * (float(temperature) - 32)
+        self.conversion.setText(str(round(value, 4)))
 
     def celsius_to_kelvin(self, temperature):
-        pass
+        value = float(temperature) + 273.15
+        self.conversion.setText(str(round(value, 4)))
 
     def kelvin_to_celsius(self, temperature):
-        pass
+        value = float(temperature) - 273.15
+        self.conversion.setText(str(round(value, 4)))
 
     def fahrenheit_to_kelvin(self, temperature):
-        pass
+        value = (float(temperature) +  459.67) * 5/9
+        self.conversion.setText(str(round(value, 4)))
 
     def kelvin_to_fahrenheit(self, temperature):
-        pass
+        value = (float(temperature) - 273.15) * 9/5 + 32
+        self.conversion.setText(str(round(value, 4)))
 
 if __name__ == "__main__":
     app = QApplication([])
