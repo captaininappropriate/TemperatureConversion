@@ -73,7 +73,6 @@ class MainWindow(QMainWindow):
         # get the index value from each combobox
         convert_from_index = self.convert_from_combobox.currentIndex()
         convert_to_index = self.convert_to_combobox.currentIndex()
-        #print(f"ComboBox 1 index: {convert_from_index}, ComboBox 2 index: {convert_to_index}")
 
         # convert temperature based on index (0 = Celsius, 1 = Fahrenheit, 2 = Kelvin)
         # if trying to convert to the same format
